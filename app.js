@@ -42,6 +42,8 @@ boxes.forEach((box, i) =>{
 
 function checkWinner() {
     winnigCombos.forEach((array, i) => {
+        
+        
         if (allX.includes(array[0]) && allX.includes(array[1]) && allX.includes(array[2])){
         message.textContent = 'X wins!'
         board.classList.add('disable')} 
@@ -49,9 +51,9 @@ function checkWinner() {
         else if (allO.includes(array[0]) && allO.includes(array[1]) && allO.includes(array[2])){
         message.textContent = 'O wins!'
         board.classList.add('disable')}
-
-        else if (allX.length === 5){
+        
+        else if (allX.length === 5 && allX.includes(array[0]) !== true && allX.includes(array[1]) !== true && allX.includes(array[2])!== true){
             message.textContent = 'Tie game!'
             board.classList.add('disable')}
-        
+
     });}
