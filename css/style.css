@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    flex-direction: column;
+    background-color: rgb(254, 229, 244);
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px -1px 1px brown, 1px -1px 1px brown, -2px 1px 1px brown, 1px 1px 1px brown;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 325px;
+    gap: 5px;
+}
+
+.sqr {
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: 3px solid brown;
+    font-size: 64px;
+    text-align: center;
+    background-color: rgb(248, 175, 205);
+    cursor: pointer;
+
+}
+button{
+    margin: 20px;
+    border-radius: 20px;
+    border: 3px solid brown;
+    font-size: 20px;
+    background-color: rgb(252, 250, 196);
+    color: brown;
+
+}
+
+.disable{
+    cursor: not-allowed;
+    pointer-events: none;
+}
